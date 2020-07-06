@@ -1,0 +1,13 @@
+version: '2'
+services:
+  app:
+    container_name: hn
+    # build: docker/app
+    image: reg.hcpss.org/headline-news/build
+    volumes:
+      - ./headline-news:/app
+    user: node
+    working_dir: /app
+    ports:
+      - 3000:3000
+      - 3001:3001

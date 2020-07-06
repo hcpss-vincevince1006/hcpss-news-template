@@ -1,0 +1,32 @@
+@import 'settings';
+@import 'foundation-emails';
+@import 'template/hn';
+@import 'template/template';
+
+table.button table td a,
+table.button table td a:hover {
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 10px 30px;
+  border: 1px solid #365CA0;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+table.button table td,
+table.button:hover table td {
+  background: #365CA0;
+  color: #ffffff;
+}
+
+table.button:hover table tr td a {
+  color: #ffffff;
+}
+
+img {
+  box-shadow: 0 2px 4px #bfbfbf;
+}
