@@ -93,7 +93,7 @@ function images() {
 // Inline CSS and minify HTML
 function inline() {
   return gulp.src('dist/**/*.html')
-    .pipe($.if(PRODUCTION, inliner('dist/css/app.css')))
+    .pipe(inliner('dist/css/app.css'))
     .pipe(gulp.dest('dist'));
 }
 

@@ -2,7 +2,7 @@ version: '2'
 services:
   app:
     container_name: hn
-    # build: .
+    build: .
     image: reg.hcpss.org/headline-news/build
     volumes:
       - ./headline-news/dist:/app/dist
@@ -12,3 +12,7 @@ services:
     ports:
       - 3000:3000
       - 3001:3001
+    # command:
+    #   - npm
+    #   - build
+    #   - "--production"
