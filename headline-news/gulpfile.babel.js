@@ -45,7 +45,7 @@ gulp.task('zip',
 // Delete the "dist" folder
 // This happens every time a build starts
 function clean(done) {
-  rimraf('dist', done);
+  rimraf('dist/*', done);
 }
 
 // Compile layouts, pages, and partials into flat HTML files

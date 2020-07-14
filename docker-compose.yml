@@ -2,10 +2,11 @@ version: '2'
 services:
   app:
     container_name: hn
-    # build: docker/app
+    # build: .
     image: reg.hcpss.org/headline-news/build
     volumes:
-      - ./headline-news:/app
+      - ./headline-news/dist:/app/dist
+      - ./headline-news/src:/app/src
     user: node
     working_dir: /app
     ports:
